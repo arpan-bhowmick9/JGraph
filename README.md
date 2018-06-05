@@ -1,6 +1,6 @@
 # JGRAPH
 
-## Personal JAVA package for Graph Algorithms
+## JAVA package for Graph Algorithms
 
 # Prerequisites :
 

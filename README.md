@@ -1,10 +1,12 @@
 # JGRAPH
 
-## JAVA package for Graph Algorithms
+JAVA package for Graph Algorithms
 
 # Prerequisites :
 
-## JAVA 8 (JDK and JRE)
+JAVA 8 (JDK and JRE)
 
 
-### Author - Arpan Bhowmik (@arpan-bhowmick9)
+#Author 
+
+Arpan Bhowmik (@arpan-bhowmick9)

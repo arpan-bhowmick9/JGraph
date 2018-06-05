@@ -2,11 +2,11 @@
 
 JAVA package for Graph Algorithms. Documentation will be updated soon.
 
-## Prerequisites :
+## Prerequisites
 
-JAVA 8 (JDK and JRE)
+JAVA 8 (JDK and JRE) must be installed.
 
 
-##Author 
+## Author 
 
 Arpan Bhowmik (@arpan-bhowmick9)

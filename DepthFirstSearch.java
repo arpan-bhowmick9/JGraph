@@ -22,7 +22,7 @@ public class DepthFirstSearch{
         dfs=new LinkedList<Integer>();
     }
     
-    public Queue<Integer> DFS(int s){ // To compute the BreadthFirstSearch traversal of the graph  s : Source vertex
+    public Queue<Integer> DFS(int s){ // To compute the BreadthFirstSearch traversal of the graph  s : Source Vertex
         boolean[] visited=new boolean[N];
         int i=0,element=0;
         

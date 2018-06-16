@@ -31,7 +31,7 @@ public class Bellman_Ford{
         distances=new int[N];
     }
     
-    public int[] BellmanFord(int s){ // To compute the shortest paths from a souce vertex to all other vertices using the Bellman-Ford algorithm  s : Source vertex
+    public int[] BellmanFord(int s){ // To compute the shortest paths from a souce vertex to all other vertices using the Bellman-Ford algorithm  s : Source Vertex
         for(int node=0;node<N;node++)
             distances[node]=max;
         distances[s]=0;

@@ -22,14 +22,14 @@ public class BreadthFirstSearch{
         bfs=new LinkedList<Integer>();
     }
     
-    public Queue<Integer> BFS(int s){ // To compute the BreadthFirstSearch traversal of the graph  s : Source vertex
+    public Queue<Integer> BFS(int s){ // To compute the BreadthFirstSearch traversal of the graph  s : Source Vertex
         boolean[] visited=new boolean[N];
         int i=0,element=0;
         
         visited[s]=true; // Marking the vertex as visited
         queue.add(s);
         
-        while(!queue.isEmpty()){
+        while(!queue.isEmpty()){ // While the queue is not empty
             element=queue.remove();
             i=element;
             bfs.add(element);
@@ -37,7 +37,7 @@ public class BreadthFirstSearch{
             while(i<N){
                 if((adj_matrix[element][i]>0)&&(visited[i]==false)){
                     queue.add(i);
-                    visited[i]=true;
+                    visited[i]=true; // Marking the vertex as visited
                 }
                 i++;
             }

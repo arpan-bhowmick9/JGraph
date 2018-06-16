@@ -1,9 +1,9 @@
 package JGraph;
 
-// To Create An Adjacency Matrix For A Graph
-// If The Maximum Number Of Vertices Be N. Then The Graph Will Have Vertex Values From 0 To N-1
+// Class To Create An Adjacency Matrix For A Graph
+// If The Total Number Of Vertices Be N. Then The Graph Will Have Vertex Values From 0 To N-1
 
-// Importing required libraries
+// Importing required packages
 import java.io.*;
 import java.util.*;
 
@@ -11,7 +11,7 @@ public class AdjacencyMatrix{
     
     public int N; // To store the total number of vertices
     public int[][] adj_matrix; // Adjacency Matrix
-    public AdjacencyMatrix(int n){ // Constructor  n : Total Number Of Vertices
+    public AdjacencyMatrix(int n){ // Constructor  n : Total number of vertices
         N=n;
         adj_matrix=new int[N][N];
         for(int i=0;i<N;i++){

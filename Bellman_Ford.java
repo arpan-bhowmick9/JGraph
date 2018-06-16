@@ -1,7 +1,7 @@
 package JGraph;
 
 // Class To Compute The Shortest Paths From A Souce Vertex To All Other Vertices Using The Bellman-Ford Algorithm 
-// If The Maximum Number Of Vertices Be N. Then The Graph Will Have Vertex Values From 0 To N-1
+// If The Total Number Of Vertices Be N. Then The Graph Will Have Vertex Values From 0 To N-1
 
 // Importing required packages
 import java.io.*;

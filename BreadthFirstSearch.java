@@ -1,7 +1,7 @@
 package JGraph;
 
 // Class To Compute The BreadthFirstSearch Traversal Of A Graph
-// If The Maximum Number Of Vertices Be N. Then The Graph Will Have Vertex Values From 0 To N-1
+// If The Total Number Of Vertices Be N. Then The Graph Will Have Vertex Values From 0 To N-1
 
 // Importing required packages
 import java.io.*;

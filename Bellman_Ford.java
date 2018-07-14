@@ -32,25 +32,25 @@ public class Bellman_Ford{
     }
     
     public int[] BellmanFord(int s){ // To compute the shortest paths from a souce vertex to all other vertices using the Bellman-Ford algorithm  s : Source Vertex
-        for(int node=0;node<N;node++)
-            distances[node]=max;
+        for(int vertex=0;vertex<N;vertex++)
+            distances[vertex]=max;
         distances[s]=0;
         
-        for(int node=0;node<N-1;node++){
-            for(int sourcenode=0;sourcenode<N;sourcenode++){
-                for(int destinationnode=0;destinationnode<N;destinationnode++){
-                    if(adj_matrix[sourcenode][destinationnode]!=max){
-                        if(distances[destinationnode]>(distances[sourcenode]+adj_matrix[sourcenode][destinationnode]))
-                            distances[destinationnode]=distances[sourcenode]+adj_matrix[sourcenode][destinationnode];
+        for(int vertex=0;vertex<N-1;vertex++){
+            for(int sourcevertex=0;sourcevertex<N;sourcevertex++){
+                for(int destinationvertex=0;destinationvertex<N;destinationvertex++){
+                    if(adj_matrix[sourcevertex][destinationvertex]!=max){
+                        if(distances[destinationvertex]>(distances[sourcevertex]+adj_matrix[sourcevertex][destinationvertex]))
+                            distances[destinationvertex]=distances[sourcevertex]+adj_matrix[sourcevertex][destinationvertex];
                     }
                 }
             }
         }
         
-        for(int sourcenode=0;sourcenode<N;sourcenode++){
-            for(int destinationnode=0;destinationnode<N;destinationnode++){
-                if(adj_matrix[sourcenode][destinationnode]!=max){
-                    if(distances[destinationnode]>distances[sourcenode]+adj_matrix[sourcenode][destinationnode])
+        for(int sourcevertex=0;sourcevertex<N;sourcevertex++){
+            for(int destinationvertex=0;destinationvertex<N;destinationvertex++){
+                if(adj_matrix[sourcevertex][destinationvertex]!=max){
+                    if(distances[destinationvertex]>distances[sourcevertex]+adj_matrix[sourcevertex][destinationvertex])
                         System.out.println("The Graph contains negative egde cycle");
                 }
             }

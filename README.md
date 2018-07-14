@@ -77,6 +77,17 @@ int[] shortest_distances=new int[N]; // N : Total number of vertices in the grap
 shortest_distances=object.BellmanFord(source_vertex); // Computing the shortest distances from the source_vertex to every other vertex of the graph.
 ```
 
+* Dijkstra
+
+	* *dijkstra(int source_vertex)* : Computes and returns a one dimensional array which contains the shortest 	distances from the source_vertex to every other vertex of the graph. The indices of the array represents the 	vertices of the graph.
+
+```
+Dijkstra object=new Dijkstra(total_number_of_vertices, adjacency_matrix); // Creating the object
+
+int[] shortest_distances=new int[N]; // N : Total number of vertices in the graph
+shortest_distances=object.dijkstra(source_vertex); // Computing the shortest distances from the source_vertex to every other vertex of the graph.
+```
+
 ## Author 
 
 Arpan Bhowmik (@arpan-bhowmick9)

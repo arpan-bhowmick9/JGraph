@@ -22,7 +22,7 @@ public class Dijkstra{
         shortest_path_tree=new boolean[N];
     }
     
-    public int minDistance(int dist[], boolean spt[]){ // To find the vertex with the minimum distance from the set of vertices not yet included in the shortest path tree{
+    public int minDistance(int[] dist, boolean[] spt){ // To find the vertex with the minimum distance from the set of vertices not yet included in the shortest path tree{
         int min=Integer.MAX_VALUE;
         int min_index=-1;
         
@@ -35,7 +35,7 @@ public class Dijkstra{
         return min_index;
     }
     
-    public int[] dijkstra(int s){ // To compute the shortest paths from a souce vertex to all other vertices using the Bellman-Ford algorithm  s : Source Vertex
+    public int[] dijkstra(int s){ // To compute the shortest paths from a souce vertex to all other vertices using the Dijkstra algorithm  s : Source Vertex
         for (int vertex=0;vertex<N;vertex++){ // Initializing the distances as infinite
             distances[vertex]=Integer.MAX_VALUE;
             shortest_path_tree[vertex]=false;

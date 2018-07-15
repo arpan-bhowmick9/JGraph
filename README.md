@@ -88,6 +88,17 @@ int[] shortest_distances=new int[N]; // N : Total number of vertices in the grap
 shortest_distances=object.dijkstra(source_vertex); // Computing the shortest distances from the source_vertex to every other vertex of the graph.
 ```
 
+* Ford-Fulkerson
+
+	* *FordFulkerson(int source_vertex, int sink_vertex)* : Computes and returns an integer which represents the maximum possible flow from the source_vertex to sink_vertex. The constraints are - Flow through an edge does not exceed the given capacity of the edge and  Incoming flow is equal to outgoing flow for every vertex except source_vertex and sink_vertex.
+
+```
+Ford_Fulkerson object=new Ford_Fulkerson(total_number_of_vertices, adjacency_matrix); // Creating the object
+
+int max_flow=0;
+max_flow=object.FordFulkerson(source_vertex, sink_vertex); // Computing the maximum possible flow from the source_vertex to the sink_vertex of the graph.
+```
+
 ## Author 
 
 Arpan Bhowmik (@arpan-bhowmick9)

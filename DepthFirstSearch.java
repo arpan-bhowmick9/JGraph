@@ -41,7 +41,7 @@ public class DepthFirstSearch{
                     stack.push(i);
                     visited[i]=true; // Marking the vertex as visited
                     element=i;
-                    i=1;
+                    i=0;
                     dfs.add(element);
                     continue;
                 }
